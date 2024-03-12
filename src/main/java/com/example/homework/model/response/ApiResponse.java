@@ -1,5 +1,6 @@
-package com.example.homework.util;
+package com.example.homework.model.response;
 
+import com.example.homework.model.codes.SuccessCode;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,4 +21,12 @@ public class ApiResponse {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
     }
+
+    @Builder
+    public ApiResponse(final Object result, SuccessCode successCode) {
+        this.result = result;
+        this.resultCode = successCode.getStatus();
+        this.resultMsg = successCode.getMessage();
+    }
+
 }

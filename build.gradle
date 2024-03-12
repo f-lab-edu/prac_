@@ -31,14 +31,18 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // jwt
     implementation 'io.jsonwebtoken:jjwt-api:0.11.3'
     implementation 'io.jsonwebtoken:jjwt-impl:0.11.3'
     implementation 'io.jsonwebtoken:jjwt-jackson:0.11.3'
-//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    // security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    // flyway -> 사용법 공부 필요!..
     implementation 'org.flywaydb:flyway-core'
     implementation 'org.flywaydb:flyway-mysql'
+    // queryDsl -> boot 3.0 부터 적용 방식 변경
     implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
     annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api"

@@ -2,7 +2,7 @@ package com.example.homework.controller;
 
 import com.example.homework.dto.UserRequestDto;
 import com.example.homework.service.UserService;
-import com.example.homework.util.ApiResponse;
+import com.example.homework.model.response.ApiResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,6 +18,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     private final UserService userService;
+
+    /**
+     * @desc 유저 로그인 및 토큰 발급처리 -> Security Filter & handler
+     * @return void
+     */
+    @PostMapping(value = "/login" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Void> loginUser() {
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 
     /**
      * @desc 유저 정보 저장

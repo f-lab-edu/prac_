@@ -1,7 +1,7 @@
-package com.example.homework.config;
+package com.example.homework.config.exception;
 
-import com.example.homework.util.ErrorCode;
-import com.example.homework.util.ErrorResponse;
+import com.example.homework.model.codes.ErrorCode;
+import com.example.homework.model.response.ErrorResponse;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;

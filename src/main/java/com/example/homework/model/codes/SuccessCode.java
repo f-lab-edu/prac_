@@ -1,4 +1,4 @@
-package com.example.homework.util;
+package com.example.homework.model.codes;
 
 import lombok.Getter;
 

@@ -1,6 +1,6 @@
-package com.example.homework.config;
+package com.example.homework.config.exception;
 
-import com.example.homework.util.ErrorCode;
+import com.example.homework.model.codes.ErrorCode;
 import lombok.Builder;
 import lombok.Getter;
 

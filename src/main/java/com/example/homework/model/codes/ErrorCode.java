@@ -1,4 +1,4 @@
-package com.example.homework.util;
+package com.example.homework.model.codes;
 
 import lombok.Getter;
 
@@ -77,10 +77,15 @@ public enum ErrorCode {
     OTHER_TOKEN_ERROR(401 , "A404" ,"Other Token Error" ),
 
     AUTH_IS_NULL(401, "A405", "Auth Is Null"),
+
     AUTH_TOKEN_FAIL(401, "A406", "Auth Token Fail"),
+
     AUTH_TOKEN_INVALID(401, "A407", "Auth Token Invalid"),
+
     AUTH_TOKEN_NOT_MATCH(401, "A408", "Auth Token Not Match"),
+
     AUTH_TOKEN_IS_NULL(401, "A409", "Auth Token Is Null"),
+
     NOT_VALID_AUTHORITIES(401, "A410" , "Invalid Authorities"),
 
     /**

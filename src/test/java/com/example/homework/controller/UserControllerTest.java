@@ -2,8 +2,8 @@ package com.example.homework.controller;
 
 import com.example.homework.dto.UserRequestDto;
 import com.example.homework.service.UserService;
-import com.example.homework.util.ApiResponse;
-import com.example.homework.util.SuccessCode;
+import com.example.homework.model.response.ApiResponse;
+import com.example.homework.model.codes.SuccessCode;
 import com.google.gson.Gson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

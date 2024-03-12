@@ -1,5 +1,6 @@
-package com.example.homework.util;
+package com.example.homework.model.response;
 
+import com.example.homework.model.codes.ErrorCode;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
